@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = %q{lyndsey.ferguson@gmail.com}
 
   spec.summary       = %q{Gets PRODUCT_BUNDLE_IDENTIFIER from the first buildable target in a given scheme}
-  spec.homepage      = "https://github.com/lyndsey-ferguson/fastlane-plugin-get_product_bundle_id"
+  spec.homepage      = "https://github.com/lyndsey-ferguson/get_product_bundle_id"
   spec.license       = "MIT"
 
   spec.files         = Dir["lib/**/*"] + %w(README.md LICENSE)
