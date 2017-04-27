@@ -1,0 +1,8 @@
+osx_image: xcode8
+language: objective-c
+before_install:
+ - gem install bundler
+ - bundle install
+# cache: cocoapods
+script:
+ - bundle exec fastlane test
