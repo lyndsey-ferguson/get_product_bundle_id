@@ -1,4 +1,0 @@
-lane :test do
-  id = get_product_bundle_id(project_filepath: 'spec/fixtures/projects/CoinTossing/CoinTossing.xcodeproj', scheme: 'CoinTossing')
-  UI.success("PRODUCT_BUNDLE_IDENTIFIER is #{id}")
-end
