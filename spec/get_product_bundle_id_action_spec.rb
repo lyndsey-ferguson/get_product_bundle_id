@@ -51,7 +51,7 @@ describe Fastlane do
         it 'throws an error when the given target does not exist' do
           project_path = "#{@tmp_xcodeproj_dirpath}/CoinTossing.xcodeproj"
           fastfile = "lane :test do
-            get_product_bundle_id(project_filepath: '#{project_path}', scheme: 'CoinTossing', target: 'No Target')
+            get_product_bundle_id(project_filepath: '#{project_path}', scheme: 'MoneyShaker', target: 'No Target')
           end"
           expect { Fastlane::FastFile.new.parse(fastfile).runner.execute(:test) }.to(
             raise_error(FastlaneCore::Interface::FastlaneError) do |error|
@@ -63,7 +63,7 @@ describe Fastlane do
         it 'provides the PRODUCT_BUNDLE_IDENTIFIER for the first target in the scheme' do
           project_path = "#{@tmp_xcodeproj_dirpath}/CoinTossing.xcodeproj"
           fastfile = "lane :test do
-            get_product_bundle_id(project_filepath: '#{project_path}', scheme: 'CoinTossing')
+            get_product_bundle_id(project_filepath: '#{project_path}', scheme: 'MoneyShaker')
           end"
           result = Fastlane::FastFile.new.parse(fastfile).runner.execute(:test)
           expect(result).to eq("Test.CoinTossing")
@@ -72,10 +72,10 @@ describe Fastlane do
         it 'provides the PRODUCT_BUNDLE_IDENTIFIER for the named target in the scheme' do
           project_path = "#{@tmp_xcodeproj_dirpath}/CoinTossing.xcodeproj"
           fastfile = "lane :test do
-            get_product_bundle_id(project_filepath: '#{project_path}', scheme: 'CoinTossingUITests', target: 'Release')
+            get_product_bundle_id(project_filepath: '#{project_path}', scheme: 'MoneyShaker', target: 'CoinTossing')
           end"
           result = Fastlane::FastFile.new.parse(fastfile).runner.execute(:test)
-          expect(result).to eq("Test.CoinTossingUITests.Release")
+          expect(result).to eq("Test.CoinTossing")
         end
       end
     end

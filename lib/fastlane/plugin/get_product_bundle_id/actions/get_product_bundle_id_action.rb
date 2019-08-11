@@ -5,19 +5,34 @@ module Fastlane
 
       def self.run(params)
         projectpath = params[:project_filepath]
+        scheme = xcscheme(params)
+        target_uuids = scheme.build_action.entries.first.buildable_references.map(&:target_uuid)
+
         project = Xcodeproj::Project.open(projectpath)
-        scheme = project.native_targets.find { |target| target.name == params[:scheme] }
-
-        UI.user_error!("Scheme '#{params[:scheme]}' does not exist in the given project") if scheme.nil?
-
+        targets = project.targets.find_all { |t| target_uuids.include?(t.uuid) }
         if params[:target].nil?
-          build_configuration = scheme.build_configurations.first
+          build_configuration = targets.first.build_configurations.first
         else
-          build_configuration = scheme.build_configurations.find { |target| target.name == params[:target] }
+          target = targets.find { |t| t.name == params[:target] }
 
-          UI.user_error!("Target '#{params[:target]}' does not exist in the given scheme") if build_configuration.nil?
+          UI.user_error!("Target '#{params[:target]}' does not exist in the given scheme") if target.nil?
+
+          build_configuration = target.build_configurations.first
         end
         build_configuration.build_settings['PRODUCT_BUNDLE_IDENTIFIER']
+      end
+
+      def self.xcscheme(params)
+        projectpath = params[:project_filepath]
+
+        scheme_paths = Dir.glob("#{projectpath}/xcshareddata/xcschemes/#{params[:scheme]}.xcscheme")
+        if scheme_paths.empty?
+          scheme_paths = Dir.glob("#{projectpath}/xcuserdata/xcschemes/#{params[:scheme]}.xcscheme")
+        end
+        UI.user_error!("Scheme '#{params[:scheme]}' does not exist in the given project") if scheme_paths.empty?
+
+        scheme_path = scheme_paths.first
+        Xcodeproj::XCScheme.new(scheme_path)
       end
 
       def self.description
