@@ -11,13 +11,13 @@ module Fastlane
         project = Xcodeproj::Project.open(projectpath)
         targets = project.targets.find_all { |t| target_uuids.include?(t.uuid) }
         if params[:target].nil?
-          build_configuration = targets.first.build_configurations.first
+          build_configuration = xcbuildconfiguration(targets.first, params[:build_configuration])
         else
           target = targets.find { |t| t.name == params[:target] }
 
           UI.user_error!("Target '#{params[:target]}' does not exist in the given scheme") if target.nil?
 
-          build_configuration = target.build_configurations.first
+          build_configuration = xcbuildconfiguration(target, params[:build_configuration])
         end
         build_configuration.build_settings['PRODUCT_BUNDLE_IDENTIFIER']
       end
@@ -33,6 +33,19 @@ module Fastlane
 
         scheme_path = scheme_paths.first
         Xcodeproj::XCScheme.new(scheme_path)
+      end
+
+      def self.xcbuildconfiguration(target, build_configuration_name)
+        if build_configuration_name.nil?
+          configuration = target.build_configurations.first
+        
+          UI.message("No configuration specified, taking first: '#{configuration.name}'")
+        else
+          configuration = target.build_configurations.find { |c| c.name == build_configuration_name }
+
+          UI.user_error!("Build configuration '#{build_configuration_name}' does not exist in target '#{target.name}'") if configuration.nil?
+        end
+        configuration
       end
 
       def self.description
@@ -73,6 +86,11 @@ module Fastlane
           FastlaneCore::ConfigItem.new(key: :target,
                                   env_name: "GET_PRODUCT_BUNDLE_ID_TARGET",
                                description: "The name of the target from which to get the PRODUCT_BUNDLE_IDENTIFIER from. If not given, defaults to the first buildable target",
+                                  optional: true,
+                                      type: String)
+          FastlaneCore::ConfigItem.new(key: :build_configuration,
+                                  env_name: "GET_PRODUCT_BUNDLE_ID_BUILD_CONFIGURATION",
+                               description: "The name of the build configuration to use. If not given, defaults to the first build configuration",
                                   optional: true,
                                       type: String)
         ]
