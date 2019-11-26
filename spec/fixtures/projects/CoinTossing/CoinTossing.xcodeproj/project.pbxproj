@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		210F786D238D706E00D46659 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBBB0C71E295CED000000AB /* ViewController.swift */; };
+		210F786E238D706E00D46659 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBBB0C51E295CED000000AB /* AppDelegate.swift */; };
+		210F7871238D706E00D46659 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BBBB0CE1E295CED000000AB /* LaunchScreen.storyboard */; };
+		210F7872238D706E00D46659 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BBBB0CC1E295CED000000AB /* Assets.xcassets */; };
+		210F7873238D706E00D46659 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BBBB0C91E295CED000000AB /* Main.storyboard */; };
 		9BBBB0C61E295CED000000AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBBB0C51E295CED000000AB /* AppDelegate.swift */; };
 		9BBBB0C81E295CED000000AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BBBB0C71E295CED000000AB /* ViewController.swift */; };
 		9BBBB0CB1E295CED000000AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BBBB0C91E295CED000000AB /* Main.storyboard */; };
@@ -34,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		210F7879238D706E00D46659 /* CoinTossingManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinTossingManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		210F787A238D706E00D46659 /* CoinTossingManager.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = CoinTossingManager.plist; path = /Users/lukaswuerzburger/Documents/projects/truffls/get_product_bundle_id/spec/fixtures/projects/CoinTossing/CoinTossingManager.plist; sourceTree = "<absolute>"; };
 		9BBBB0C21E295CED000000AB /* CoinTossing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinTossing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BBBB0C51E295CED000000AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BBBB0C71E295CED000000AB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +57,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		210F786F238D706E00D46659 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BBBB0BF1E295CED000000AB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -90,6 +104,7 @@
 				9BBBB0C21E295CED000000AB /* CoinTossing.app */,
 				9BBBB0D61E295CED000000AB /* CoinTossingTests.xctest */,
 				9BBBB0E11E295CEE000000AB /* CoinTossingUITests.xctest */,
+				210F7879238D706E00D46659 /* CoinTossingManager.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +118,7 @@
 				9BBBB0CC1E295CED000000AB /* Assets.xcassets */,
 				9BBBB0CE1E295CED000000AB /* LaunchScreen.storyboard */,
 				9BBBB0D11E295CED000000AB /* Info.plist */,
+				210F787A238D706E00D46659 /* CoinTossingManager.plist */,
 			);
 			path = CoinTossing;
 			sourceTree = "<group>";
@@ -128,6 +144,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		210F786B238D706E00D46659 /* CoinTossingManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 210F7874238D706E00D46659 /* Build configuration list for PBXNativeTarget "CoinTossingManager" */;
+			buildPhases = (
+				210F786C238D706E00D46659 /* Sources */,
+				210F786F238D706E00D46659 /* Frameworks */,
+				210F7870238D706E00D46659 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoinTossingManager;
+			productName = CoinTossing;
+			productReference = 210F7879238D706E00D46659 /* CoinTossingManager.app */;
+			productType = "com.apple.product-type.application";
+		};
 		9BBBB0C11E295CED000000AB /* CoinTossing */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BBBB0EA1E295CEE000000AB /* Build configuration list for PBXNativeTarget "CoinTossing" */;
@@ -212,6 +245,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -223,11 +257,22 @@
 				9BBBB0C11E295CED000000AB /* CoinTossing */,
 				9BBBB0D51E295CED000000AB /* CoinTossingTests */,
 				9BBBB0E01E295CED000000AB /* CoinTossingUITests */,
+				210F786B238D706E00D46659 /* CoinTossingManager */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		210F7870238D706E00D46659 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				210F7871238D706E00D46659 /* LaunchScreen.storyboard in Resources */,
+				210F7872238D706E00D46659 /* Assets.xcassets in Resources */,
+				210F7873238D706E00D46659 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BBBB0C01E295CED000000AB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -255,6 +300,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		210F786C238D706E00D46659 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				210F786D238D706E00D46659 /* ViewController.swift in Sources */,
+				210F786E238D706E00D46659 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9BBBB0BE1E295CED000000AB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,6 +369,225 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		210F7863238D704300D46659 /* Debug Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug Stage";
+		};
+		210F7864238D704300D46659 /* Debug Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoinTossing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Test.CoinTossing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = "Debug Stage";
+		};
+		210F7865238D704300D46659 /* Debug Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CoinTossingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Test.CoinTossingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinTossing.app/CoinTossing";
+			};
+			name = "Debug Stage";
+		};
+		210F7866238D704300D46659 /* Debug Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = CoinTossingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Test.CoinTossingUITests.Debug;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CoinTossing;
+			};
+			name = "Debug Stage";
+		};
+		210F7867238D705D00D46659 /* Release Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Stage";
+		};
+		210F7868238D705D00D46659 /* Release Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoinTossing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Test.CoinTossing;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = "Release Stage";
+		};
+		210F7869238D705D00D46659 /* Release Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CoinTossingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Test.CoinTossingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinTossing.app/CoinTossing";
+			};
+			name = "Release Stage";
+		};
+		210F786A238D705D00D46659 /* Release Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = CoinTossingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Test.CoinTossingUITests.Release;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = CoinTossing;
+			};
+			name = "Release Stage";
+		};
+		210F7875238D706E00D46659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoinTossing/CoinTossingManager.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Test.CoinTossingManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		210F7876238D706E00D46659 /* Debug Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoinTossing/CoinTossingManager.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Test.CoinTossingManager.Stage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = "Debug Stage";
+		};
+		210F7877238D706E00D46659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoinTossing/CoinTossingManager.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Test.CoinTossingManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		210F7878238D706E00D46659 /* Release Stage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CoinTossing/CoinTossingManager.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Test.CoinTossingManager.Stage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = "Release Stage";
+		};
 		9BBBB0E81E295CEE000000AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -489,11 +762,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		210F7874238D706E00D46659 /* Build configuration list for PBXNativeTarget "CoinTossingManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				210F7875238D706E00D46659 /* Debug */,
+				210F7876238D706E00D46659 /* Debug Stage */,
+				210F7877238D706E00D46659 /* Release */,
+				210F7878238D706E00D46659 /* Release Stage */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9BBBB0BD1E295CED000000AB /* Build configuration list for PBXProject "CoinTossing" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9BBBB0E81E295CEE000000AB /* Debug */,
+				210F7863238D704300D46659 /* Debug Stage */,
 				9BBBB0E91E295CEE000000AB /* Release */,
+				210F7867238D705D00D46659 /* Release Stage */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -502,25 +788,34 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9BBBB0EB1E295CEE000000AB /* Debug */,
+				210F7864238D704300D46659 /* Debug Stage */,
 				9BBBB0EC1E295CEE000000AB /* Release */,
+				210F7868238D705D00D46659 /* Release Stage */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9BBBB0ED1E295CEE000000AB /* Build configuration list for PBXNativeTarget "CoinTossingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9BBBB0EE1E295CEE000000AB /* Debug */,
+				210F7865238D704300D46659 /* Debug Stage */,
 				9BBBB0EF1E295CEE000000AB /* Release */,
+				210F7869238D705D00D46659 /* Release Stage */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9BBBB0F01E295CEE000000AB /* Build configuration list for PBXNativeTarget "CoinTossingUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9BBBB0F11E295CEE000000AB /* Debug */,
+				210F7866238D704300D46659 /* Debug Stage */,
 				9BBBB0F21E295CEE000000AB /* Release */,
+				210F786A238D705D00D46659 /* Release Stage */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
