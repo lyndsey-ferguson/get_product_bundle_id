@@ -87,7 +87,7 @@ module Fastlane
                                   env_name: "GET_PRODUCT_BUNDLE_ID_TARGET",
                                description: "The name of the target from which to get the PRODUCT_BUNDLE_IDENTIFIER from. If not given, defaults to the first buildable target",
                                   optional: true,
-                                      type: String)
+                                      type: String),
           FastlaneCore::ConfigItem.new(key: :build_configuration,
                                   env_name: "GET_PRODUCT_BUNDLE_ID_BUILD_CONFIGURATION",
                                description: "The name of the build configuration to use. If not given, defaults to the first build configuration",

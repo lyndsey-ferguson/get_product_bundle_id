@@ -67,7 +67,7 @@ describe Fastlane do
           end"
           expect { Fastlane::FastFile.new.parse(fastfile).runner.execute(:test) }.to(
             raise_error(FastlaneCore::Interface::FastlaneError) do |error|
-              expect(error.message).to match("Build configuration 'No Build Configuration' does not exist in target 'MoneyShaker'")
+              expect(error.message).to match("Build configuration 'No Build Configuration' does not exist in target 'CoinTossing'")
             end
           )
         end
