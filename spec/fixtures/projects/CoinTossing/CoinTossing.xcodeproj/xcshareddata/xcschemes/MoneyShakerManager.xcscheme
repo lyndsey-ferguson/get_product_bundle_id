@@ -14,53 +14,24 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9BBBB0C11E295CED000000AB"
-               BuildableName = "CoinTossing.app"
-               BlueprintName = "CoinTossing"
+               BlueprintIdentifier = "210F786B238D706E00D46659"
+               BuildableName = "CoinTossingManager.app"
+               BlueprintName = "CoinTossingManager"
                ReferencedContainer = "container:CoinTossing.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Debug Stage"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9BBBB0C11E295CED000000AB"
-            BuildableName = "CoinTossing.app"
-            BlueprintName = "CoinTossing"
-            ReferencedContainer = "container:CoinTossing.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9BBBB0D51E295CED000000AB"
-               BuildableName = "CoinTossingTests.xctest"
-               BlueprintName = "CoinTossingTests"
-               ReferencedContainer = "container:CoinTossing.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9BBBB0E01E295CED000000AB"
-               BuildableName = "CoinTossingUITests.xctest"
-               BlueprintName = "CoinTossingUITests"
-               ReferencedContainer = "container:CoinTossing.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
-      buildConfiguration = "Debug"
+      buildConfiguration = "Debug Stage"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
@@ -73,15 +44,15 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9BBBB0C11E295CED000000AB"
-            BuildableName = "CoinTossing.app"
-            BlueprintName = "CoinTossing"
+            BlueprintIdentifier = "210F786B238D706E00D46659"
+            BuildableName = "CoinTossingManager.app"
+            BlueprintName = "CoinTossingManager"
             ReferencedContainer = "container:CoinTossing.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Release Stage"
       shouldUseLaunchSchemeArgsEnv = "YES"
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
@@ -90,18 +61,18 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9BBBB0C11E295CED000000AB"
-            BuildableName = "CoinTossing.app"
-            BlueprintName = "CoinTossing"
+            BlueprintIdentifier = "210F786B238D706E00D46659"
+            BuildableName = "CoinTossingManager.app"
+            BlueprintName = "CoinTossingManager"
             ReferencedContainer = "container:CoinTossing.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
-      buildConfiguration = "Debug">
+      buildConfiguration = "Debug Stage">
    </AnalyzeAction>
    <ArchiveAction
-      buildConfiguration = "Release"
+      buildConfiguration = "Release Stage"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>
